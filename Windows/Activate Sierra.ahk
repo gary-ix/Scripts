@@ -4,10 +4,10 @@
 SetTitleMatchMode, 2
 
 +^!F1::
-    WinActivate, SC1
+    WinActivate, ES Footprint
 return
 
 +^!F2::
-    WinActivate, SC2
+    WinActivate, NQ Footprint
 return
 

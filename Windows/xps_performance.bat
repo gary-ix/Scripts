@@ -1,10 +1,10 @@
 @echo off
 
 REM Set the maximum processor frequency on AC power
-powercfg /setacvalueindex SCHEME_BALANCED SUB_PROCESSOR PROCFREQMAX 3100
+powercfg /setacvalueindex SCHEME_BALANCED SUB_PROCESSOR PROCFREQMAX 3800
 
 REM Set the maximum processor frequency on DC power
-powercfg /setdcvalueindex SCHEME_BALANCED SUB_PROCESSOR PROCFREQMAX 2250
+powercfg /setdcvalueindex SCHEME_BALANCED SUB_PROCESSOR PROCFREQMAX 3000
 
 REM Reduce display brightness to 50% on AC and DC power
 powercfg /setacvalueindex SCHEME_BALANCED SUB_VIDEO VIDEONORMALLEVEL 100

@@ -1,7 +1,7 @@
 @echo off
 
 REM Set the maximum processor frequency on AC power
-powercfg /setacvalueindex SCHEME_BALANCED SUB_PROCESSOR PROCFREQMAX 4300
+powercfg /setacvalueindex SCHEME_BALANCED SUB_PROCESSOR PROCFREQMAX 4100
 
 REM Set the maximum processor frequency on DC power
 powercfg /setdcvalueindex SCHEME_BALANCED SUB_PROCESSOR PROCFREQMAX 3000
