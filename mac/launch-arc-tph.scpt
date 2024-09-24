@@ -4,9 +4,9 @@ tell application "System Events"
         repeat with w in windowList
             set windowName to name of w
               if windowName does not contain "." then
-                -- display dialog windowName        
+                -- display dialog windowName
                 perform action "AXRaise" of w
-              end if
+            end if
         end repeat
     end tell          
 end tell
@@ -14,7 +14,6 @@ end tell
 tell application "Arc" to activate
 tell application "Arc"
   tell front window 
-    tell space "Tradester" to focus
+    tell space "TPH" to focus
   end tell
 end tell
-
