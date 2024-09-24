@@ -1,18 +1,15 @@
+tell application "Arc" to activate
+
 tell application "System Events"
-  set isRunning to (name of processes) contains "Arc"
+    tell process "Arc"
+        set windowList to windows
+        repeat with w in windowList
+            set windowName to name of w
+            if windowName contains "." then
+                -- display dialog "Found"
+                perform action "AXRaise" of w
+                exit repeat
+            end if
+        end repeat
+    end tell          
 end tell
-
-if isRunning then
-  tell application "Arc" to activate
-else
-  launch app "Arc"
-  delay "1"
-end if
-
-tell application "Arc"
-  tell front window
-    tell space "." to focus
-  end tell
-end tell
-
-
