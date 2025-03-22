@@ -1,0 +1,15 @@
+.quick-input-widget {
+  position: fixed !important;
+  inset: 50% auto auto 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+  right: auto !important;
+  border: 2px solid #1a1d20 !important;
+  font-size: 15px !important;
+  width: 80% !important;
+  max-width: 725px !important;
+  height: auto !important;
+  max-height: 90vh !important;
+  line-height: 1.25 !important;
+  padding: 1px 0 !important;
+}
