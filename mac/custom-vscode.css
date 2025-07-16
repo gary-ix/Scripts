@@ -6,10 +6,13 @@
   right: auto !important;
   border: 2px solid #1a1d20 !important;
   font-size: 15px !important;
-  width: 80% !important;
-  max-width: 725px !important;
-  height: auto !important;
-  max-height: 90vh !important;
+  width: 70% !important;
+  max-width: 600px !important;
+  max-width: 35vw !important;
+  min-height: 500px !important;
+  max-height: 50vh !important;
   line-height: 1.25 !important;
   padding: 1px 0 !important;
+  resize: none !important;
+  overflow: hidden !important;
 }
