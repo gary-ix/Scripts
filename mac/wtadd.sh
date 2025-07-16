@@ -12,6 +12,7 @@ gwadd() {
     fi
 
     local branch_name="$1"
+    local safe_branch_name="${branch_name//\//__}"
     local current_dir=$(pwd)
     local repo_root=$(git rev-parse --show-toplevel 2>/dev/null)
     
@@ -23,7 +24,7 @@ gwadd() {
 
     # Determine the parent directory and new worktree path
     local parent_dir=$(dirname "$repo_root")
-    local worktree_path="$parent_dir/$branch_name"
+    local worktree_path="$parent_dir/$safe_branch_name"
 
     # Check if the worktree directory already exists
     if [[ -d "$worktree_path" ]]; then
